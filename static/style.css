@@ -1,0 +1,56 @@
+
+/* General */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(228, 249, 255);
+}
+
+
+
+/* Navbar */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgba(44, 62, 80, 0.85);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    border-bottom: 4px solid rgb(243, 156, 18);
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(236, 240, 241);
+    font-size: 1.4rem;
+}
+
+.options ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+.options ul a{
+    text-decoration: none;
+    color: rgb(236, 240, 241);
+    padding: 8px 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.options ul a.active{
+    color: rgb(243, 156, 18);
+}
+
+.options ul a:hover{
+    color: rgb(243, 156, 18);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="{{url_for('home')}}">
+                <h2>AV Math Team</h2>
+            </a>
+        </div>
+        <div class="options">
+            <ul>
+                <a href="{{url_for('team')}}" class="{% if request.path == url_for('team') %} active {% endif %}"><li>Our Team</li></a>
+                <a href="{{url_for('achievements')}}" class="{% if request.path == url_for('achievements') %} active {% endif %}"><li>Achievements</li></a>
+                <a href="{{url_for('events')}}" class="{% if request.path == url_for('events') %} active {% endif %}"><li>Events</li></a>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

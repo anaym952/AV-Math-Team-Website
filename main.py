@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -16,9 +16,9 @@ def team():
     
 
 
-@app.route("/competitions")
-def past_competitions():
-    return render_template('pastCompetitions.html')
+@app.route("/achievements")
+def achievements():
+    return render_template('achievements.html')
 
 
 
