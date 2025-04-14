@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html, body{
@@ -29,6 +29,7 @@ nav{
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12);
     z-index: 1000;
     border-bottom: 4px solid rgb(243, 156, 18);
+    padding-left: 40px;
 }
 
 .logo a{
@@ -66,7 +67,89 @@ nav{
 }
 
 #header{
-    font-weight:800;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+
+/* Officer Team Page */
+
+.officers-container{
+    margin-bottom: 30px;
+}
+
+.officers-container ul{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.officers-container ul li{
+    width: 20%;
+}
+
+.officers-container ul li img{
+    border-radius: 2px;
+    width: 100%;
+    border-style: solid;
+    /* cursor: pointer; */
+}
+
+.officers-container ul li p{
+    font-size: 11px;
+}
+
+#officer-title{
+    margin-bottom: 5px;
+}
+
+
+
+/* Past Competitions & Scores (Achievements) */
+
+.achievements-page-container{
+    display: flex;
+    gap: 20px;
+}
+
+.achievements-container{
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.achievements-container ul{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.achievements-container ul li a{
+    color: rgb(243, 156, 18);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#score{
+    margin-top: 2px;
+    margin-left: 7px;
+}
+
+.achievements-images-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bamo-logo{
+    width: 50%;
+}
+
+#medal{
+    width: 20%;
 }
 
 
@@ -74,7 +157,7 @@ nav{
 /* Footer */
 
 footer{
-    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.12);
     border-top: 3px solid rgb(243, 156, 18);
     color: rgb(236, 240, 241);
     background-color: rgba(20, 93, 165, 0.8);
@@ -83,10 +166,10 @@ footer{
     padding: 6px 6px;
 }
 
-.footer_container ul{
+.footer-container ul{
     display: flex;
     list-style: none;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
     justify-content: center;
 
@@ -100,4 +183,8 @@ footer{
 .discord i{
     color: white;
     font-size: 35px;
+}
+
+.mailing-list{
+    color: rgb(243, 156, 18);
 }
