@@ -9,7 +9,7 @@
 }
 
 html, body{
-    background-color: rgb(238, 251, 255);
+    background-color: rgb(243, 252, 255);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -68,88 +68,136 @@ nav{
 
 #header{
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
 
 /* Officer Team Page */
 
-.officers-container{
-    margin-bottom: 30px;
-}
 
-.officers-container ul{
-    justify-content: center;
+.officers-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.officers-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
-    gap: 40px;
+    padding: 0px;
 }
 
-.officers-container ul li{
-    width: 20%;
+.officers-container ul li {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 }
 
-.officers-container ul li img{
-    border-radius: 2px;
+.officers-container ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.officers-container ul li img {
     width: 100%;
-    border-style: solid;
-    /* cursor: pointer; */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(243, 156, 18);
 }
 
-.officers-container ul li p{
-    font-size: 11px;
+.officers-container ul li h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(20, 93, 165);
 }
 
-#officer-title{
-    margin-bottom: 5px;
+.officers-container ul li p {
+    font-size: 0.9rem;
+    color: rgb(51, 51, 51);
 }
 
 
 
 /* Past Competitions & Scores (Achievements) */
 
-.achievements-page-container{
+.achievements-page-container {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 60px;
+    flex-wrap: wrap;
 }
 
-.achievements-container{
-    width: 50%;
-    margin-left: 100px;
-    margin-bottom: 50px;
+.achievements-container {
+    max-width: 550px;
+    flex: 1;
 }
 
-.achievements-container ul{
-    text-align: left;
+.achievements-container ul {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
+    text-align: left;
+    list-style: none;
 }
 
-.achievements-container ul li a{
+.achievements-container ul li {
+    padding-left: 10px;
+    border-left: 4px solid rgb(20, 93, 165);
+}
+
+.achievements-container ul li a {
+    color: rgb(20, 93, 165);
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.achievements-container ul li a:hover {
     color: rgb(243, 156, 18);
-    font-weight: bolder;
-    font-size: 20px;
+    text-decoration: underline;
 }
 
-#score{
-    margin-top: 2px;
-    margin-left: 7px;
+#score {
+    margin-left: 12px;
+    font-size: 0.9rem;
+    color: rgb(51, 51, 51);
+    font-style: italic;
 }
 
-.achievements-images-container{
+.achievements-images-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    flex: 1;
+    max-width: 200px;
 }
 
-#bamo-logo{
-    width: 50%;
+#competition{
+    font-weight: 600;
 }
 
-#medal{
-    width: 20%;
+#bamo-logo {
+    width: 100%;
+}
+
+#medal {
+    width: 60%;
+    margin-top: -10px;
 }
 
 
