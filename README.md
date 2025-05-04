@@ -7,7 +7,7 @@ To run the project in your local server:
    - MacOS: Open the Terminal app, run 'git --version', and follow further instructions
    - Linux: Open the Terminal app and run 'sudo apt update' & 'sudo apt install git'
 
-2. If Python isn't installed yet, go to python.org/downloads to download it for your respective OS
+2. If Python isn't installed yet, go to https://python.org/downloads to download it for your respective OS
 
 3. Open the Terminal app in the desired directory (i.e. downloads directory would be accessed by running 'cd ~/Downloads')
 
