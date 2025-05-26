@@ -1,5 +1,3 @@
-***Official website domain/link coming soon!***
-
 
 **To run the project in your local server:**
 
